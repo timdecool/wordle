@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Roboto';
+}
+.row {
+    display: flex;
+}
+
+.history {
+    padding: 30px 0 0 30px;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+}
+
+.gameLayout {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 5px;    
+    background-color: rgb(0, 128, 121);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    user-select: none;
+
+}
+
+.gameRow {
+    display: flex;
+    gap: 5px;
+}
+
+.gameSlot {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    font-size: 35px;
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Roboto';
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(58, 58, 58);
+    user-select: none;
+}
+
+
+.misplaced {
+    background-color: rgb(255, 218, 97);
+}
+
+.placed {
+    background-color: rgb(110, 255, 110);
+}
+
+.playBtn {
+    padding: 15px 60px;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgb(0, 128, 121);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto';
+}
+
+.playBtn:hover {
+    filter: grayscale(0.5);
+}
+
+.scoreline {
+    color: white;
+    display: flex;
+    align-items: last baseline;
+    font-size: 12px;
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+}
+
+.scoreFigure {
+    font-size: 20px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: first baseline;
+    gap: 10px;
+}
+
+.score {
+    background-color:rgb(0, 128, 121);
+    color: white;
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 15px;
+}
